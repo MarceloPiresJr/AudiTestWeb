@@ -17,28 +17,27 @@ Testando elemento "Quem Somos"
     Então Devo ser Autenticado               //QUEM SOMOS
 
 Testando elemento Serviços
-    [tags]    002    
-
+    [tags]                               002                        
     Quando eu passo em "Serviços"
-    E clico em Testes Automatizados
-    Então Devo ser Autenticado         //TESTES AUTOMATIZADOS 
+    E clico em "Testes Automatizados"
+    Então Devo ser Autenticado           //TESTES AUTOMATIZADOS 
 
 Testando elemtento Cases de Sucesso
-    [tags]                                   003
+    [tags]                                003
     Quando clico em "Cases de Sucesso"
-    Então devo ser Autenticado               //CASES DE SUCESSO
+    Então devo ser Autenticado            //CASES DE SUCESSO
 
 Testando Trabalhe Conosco
-    [tags]              004
+    [tags]                                004
     Quando clico em "Trabalhe Conosco"
-    Então devo ser Autenticado      //TRABALHE     
+    Então devo ser Autenticado            //TRABALHE    
 
 Testando elemento Blog
     Quando clico em "Blog"
-    Então devo ser Autenticado      //BLOG   
+    Então devo ser Autenticado    //BLOG    
 
 Testando elemento Contato
-   Quando clico em "Contato"
-   Então devo ser autenticado       //CONTATO
-   
+    Quando clico em "Contato"
+    Então devo ser autenticado    //CONTATO
+
 ***Keywords***

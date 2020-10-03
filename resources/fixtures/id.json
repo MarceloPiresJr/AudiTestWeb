@@ -1,0 +1,11 @@
+{
+    "Quem Somos": "css:li[id='menu-item-133']",
+    "Testes Automatizados": "css:li[id='menu-item-296']",
+    "Cases de Sucesso": "id:menu-item-392",
+    "Trabalhe Conosco": "id:menu-item-135",
+    "Blog": "id:menu-item-1477",
+    "Contato":"id:menu-item-130",
+    "Serviços":"css:li[id='menu-item-290']"
+
+}
+

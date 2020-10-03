@@ -5,6 +5,7 @@ Resource    ../pages/BasePage.robot
 
 
 Library    SeleniumLibrary
+Library    OperatingSystem
 
 ***Variables***
 
@@ -18,28 +19,25 @@ Dado que eu acesso a pagina principal
 Então Devo ser Autenticado
     [Arguments]                      ${auth_message}
     Wait Until Element is Visible    ${auth} 
-    Element Should Contain     ${auth}            ${auth_message}    None    True
+    Element Should Contain           ${auth}            ${auth_message}    None    True
 
-Quando clico em "Quem Somos"
-    Click Element    css:li[id='menu-item-133']
+Quando eu passo em ${text}
+    ${id}=        Get Menu ID Json    ${text}
+    Mouse Over    ${id}
 
-Quando eu passo em "Serviços"
-    Mouse Over    css:li[id='menu-item-290']
+E clico em ${text}
+    Quando clico em ${text}
 
-E clico em Testes Automatizados
-    Click Element    css:li[id='menu-item-296']
+Quando clico em ${text}
+    ${id}=           Get Menu ID Json    ${text}
+    Click Element    ${id} 
 
-Quando clico em "Cases de Sucesso"
-    Click Element    id:menu-item-392
+Get Menu ID Json
+    [Arguments]    ${text}
 
-Quando clico em "Trabalhe Conosco"
-    Click Element    id:menu-item-135
+    ${file}=    Get File    resources/fixtures/id.json
+    ${json}=    Evaluate    json.loads($file)             json
 
-Quando clico em "Blog"
-    Click Element    id:menu-item-1477
-
-Quando clico em "Contato"
-    Click Element    id:menu-item-130
-
+    [Return]    ${json[${text}]}
 
 
