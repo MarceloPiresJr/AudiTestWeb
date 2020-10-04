@@ -1,5 +1,5 @@
 {
-    "Quem Somos": "css:li[id='menu-item-133']",
+    "Quem Somos": "css:li[class*='menu-item-133']",
     "Testes Automatizados": "css:li[id='menu-item-296']",
     "Cases de Sucesso": "id:menu-item-392",
     "Trabalhe Conosco": "id:menu-item-135",
@@ -8,4 +8,3 @@
     "Serviços":"css:li[id='menu-item-290']"
 
 }
-

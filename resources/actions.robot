@@ -9,7 +9,8 @@ Library    OperatingSystem
 
 ***Variables***
 
-${auth}    css:h1[class='vc_custom_heading titulo_site']
+${auth}       css:h1[class='vc_custom_heading titulo_site']
+${nav_bar}    class=navbar-toggle
 
 ***Keywords***
 
@@ -22,22 +23,29 @@ Então Devo ser Autenticado
     Element Should Contain           ${auth}            ${auth_message}    None    True
 
 Quando eu passo em ${text}
-    ${id}=        Get Menu ID Json    ${text}
+    ${id}=        Get Menu ID Json    ${text}       ids_web
     Mouse Over    ${id}
 
-E clico em ${text}
-    Quando clico em ${text}
+E clico em ${text} na versão web
+    Quando clico em ${text} na versão web    
 
-Quando clico em ${text}
-    ${id}=           Get Menu ID Json    ${text}
+E clico em ${text} na versão mobile
+    Quando clico em ${text} na versão mobile    
+
+Quando clico em ${text} na versão web
+    ${id}=           Get Menu ID Json    ${text}    ids_web
     Click Element    ${id} 
 
-Get Menu ID Json
-    [Arguments]    ${text}
+Quando clico em ${text} na versão mobile
+    Click Button    ${nav_bar}
+    ${id}=           Get Menu ID Json    ${text}    ids_mobile
+    Click Element    ${id}  
 
-    ${file}=    Get File    resources/fixtures/id.json
+### Helper
+Get Menu ID Json
+    [Arguments]    ${text}      ${json_file}
+
+    ${file}=    Get File    resources/fixtures/${json_file}.json
     ${json}=    Evaluate    json.loads($file)             json
 
     [Return]    ${json[${text}]}
-
-

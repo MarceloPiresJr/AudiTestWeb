@@ -1,0 +1,10 @@
+{
+    "Quem Somos": "//*[@id='menu-menu-topo-1']/li[2]",
+    "Testes Automatizados": "//*[@id='menu-menu-topo-1']/li[3]/ul/li[1]/a",
+    "Cases de Sucesso": "//*[@id='menu-menu-topo-1']/li[4]",
+    "Trabalhe Conosco": "//*[@id='menu-menu-topo-1']/li[5]",
+    "Blog": "//*[@id='menu-menu-topo-1']/li[6]",
+    "Contato":"//*[@id='menu-menu-topo-1']/li[7]",
+    "Serviços":"//*[@id='menu-menu-topo-1']/li[3]/span"
+
+}
