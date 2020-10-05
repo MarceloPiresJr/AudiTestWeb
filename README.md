@@ -6,7 +6,7 @@
 - Robot Framework - 3.2.2
 - Cucumber
 - ChromeDriver - 
-
+------
 ## Instalação
 
 "*Para a execução dos comando abaixo é necessário o python instalado em sua maquina.*"
@@ -18,7 +18,7 @@ pip install robotframework-seleniumlibrary
 ```
 pip install robotframework
 ```
-
+------
 ## Execução
 
 A execução tem que ser feita na raiz do projeto.
@@ -26,7 +26,7 @@ A execução tem que ser feita na raiz do projeto.
 ```
 robot -d ./logs tests
 ```
-
+------
 ## *Observações*
 
 Para rodar os testes é necessário o uso do chromeDriver e o mesmo tem que ser da mesma versão do seu navegador e tem que ser posto no Path do seu computador. 
