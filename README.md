@@ -21,6 +21,8 @@ pip install robotframework
 
 ## Execução
 
+A execução tem que ser feita na raiz do projeto.
+
 ```
 robot -d ./logs tests
 ```
