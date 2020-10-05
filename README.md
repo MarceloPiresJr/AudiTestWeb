@@ -1,4 +1,3 @@
-Exercicios 3 e 4
 
 ## Requisitos
 
